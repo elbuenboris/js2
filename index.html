@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+<header class="title">
+    <h1 class="first-text">Weather Forecast</h1>
+</header>
+
+<div class="hero"></div>
+
+<div class="container">   
+    <h1> </h1>
+    
+    <div class="label">
+        <label for="city">City</label>
+    </div>
+    <div class="input">
+        <input type="text" id="city">
+        <button class="consult" onclick="consultClimate()">Consult</button>
+    </div>
+    <br><br>
+    <div class="label">
+        <label for="cities">Consult Multiple Cities</label>
+    </div>
+    <div class="input">
+        <input type="text" id="cities">
+        <button class="consult" onclick="consultCLimates()">Consult</button>
+    </div>
+    <br><br>
+    <div>
+        <button class="clean" onclick="cleanTable()">Clear</button>
+    </div>
+    <br><br>
+    <div>
+        <table id="table-climate">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Temperature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <script src="script.js"></script>
+</div>     
+</body>
+
+</html>
